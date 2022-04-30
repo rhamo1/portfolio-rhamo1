@@ -10,7 +10,7 @@ export const Home = () => {
   const [play] = useSound(sound);
   const history = useHistory();
   return (
-    <Center flexDirection={"column"} height="100vh" alignItems={"center"}>
+    <Center flexDirection={"column"} height="100%" alignItems={"center"}>
       <h3>gospeldownloads</h3>
       <Button variant={"ButtonBlock"} onClick={() => history.push("/fodase")}>
         aaaaaaaaa
