@@ -1,13 +1,14 @@
 import { Center, Image } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import useSound from "use-sound";
 import sound from "../../media/gospel.mp3";
+import lanssa from "../../media/cachorrada.mp3";
 
 export const Home = () => {
-  const [play] = useSound(sound);
+  const [play] = useSound(lanssa);
   const history = useHistory();
-  play();
   return (
     <Center flexDirection={"column"} height="100vh" alignItems={"center"}>
       <h3>gospeldownloads</h3>
@@ -19,6 +20,8 @@ export const Home = () => {
         maxWidth={"70%"}
         src="https://static.corinthians.com.br/uploads/1639404326db095bd14b838cbf3abf886f492c721b.jpg"
       />
+      <Button onClick={() => play(sound)}>gospel</Button>
+      {/* <Button onClick={() => play(lanssa)}>cachorrada</Button> */}
     </Center>
   );
 };
