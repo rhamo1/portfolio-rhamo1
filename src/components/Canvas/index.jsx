@@ -1,23 +1,10 @@
-import DOMPurify from "dompurify";
-
-const rawHTML = `
-<!DOCTYPE html><html lang="en"><head>
-    <script src="p5.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
-
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-    <p>teste</p>
-  
-
-</body></html>
-`;
+import React from "react";
+import Sketch from "react-p5";
 
 export const Canvas = () => {
-  return <div dangerouslySetInnerHTML={{ __html: rawHTML }}></div>;
+  const setup = (p5, canvasParentRef) => {
+    p5.createCanvas(1000, 800).parent(canvasParentRef);
+  };
+  const draw = (p5) => {};
+  return <Sketch setup={setup} draw={draw} />;
 };

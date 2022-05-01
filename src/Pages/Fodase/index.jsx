@@ -11,7 +11,7 @@ export const Fodase = () => {
     <Center flexDirection={"column"} alignItems="center" height={"100vh"}>
       <Button onClick={() => play()}>jungle</Button>
       <Image src="https://68.media.tumblr.com/9c482ecfcda309f629ac69168f2c22c2/tumblr_oh44bi2bp91vj2gx4o1_500.gif" />
-      <Button onClick={() => history.push("/")}>fodase</Button>
+      <Button onClick={() => history.push("/cachorro")}>fodase</Button>
     </Center>
   );
 };
