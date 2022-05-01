@@ -3,7 +3,7 @@ import { Fodase } from "../Pages/Fodase";
 import { Home } from "../Pages/Home";
 import { Cachorro } from "../Pages/Cachorro";
 import { Draw } from "../Pages/Draw";
-import { Sort } from "../Pages/Sort";
+import { Spiral } from "../Pages/3Dcube";
 
 export const Routes = () => {
   return (
@@ -12,7 +12,7 @@ export const Routes = () => {
       <Route path="/fodase" component={Fodase} />
       <Route path="/cachorro" component={Cachorro} />
       <Route path="/canvas" component={Draw} />
-      <Route path="/sort" component={Sort} />
+      <Route path="/spiral" component={Spiral} />
     </Switch>
   );
 };

@@ -3,10 +3,7 @@ import { Button, Center } from "@chakra-ui/react";
 import React from "react";
 import Sketch from "react-p5";
 import { useHistory } from "react-router-dom";
-import image from "../../media/pics/globe.png";
 
-let x = 50;
-let y = 50;
 const history = useHistory;
 
 export const Draw = () => {
@@ -14,24 +11,33 @@ export const Draw = () => {
   const setup = (p5, canvasParentRef) => {
     // use parent to render the canvas in this ref
     // (without that p5 will render the canvas outside of your component)
-    p5.createCanvas(1000, 800).parent(canvasParentRef);
-    p5.loadImage(image, (img) => {
-      p5.image(img, 700, 0);
-      p5.image.resize(1000, 900);
-    });
+    p5.createCanvas(1000, 900).parent(canvasParentRef);
   };
+
+  let colorValue = 250;
+  let colorValue1 = 250;
+  let colorValue2 = 250;
 
   let sizex = 50;
   let sizey = 50;
   const draw = (p5) => {
     if (p5.mouseIsPressed) {
-      p5.fill(image);
+      // color();
       sizex = p5.mouseX;
       sizey = p5.mouseY;
+
+      colorValue = p5.mouseX * 0.5;
+
+      colorValue1 = p5.mouseY * 0.02;
+
+      colorValue2 = p5.mouseY * 0.09;
+
+      p5.fill(colorValue, colorValue1, colorValue2);
     } else {
-      p5.fill(255);
+      p5.fill(colorValue, colorValue1, colorValue2);
     }
-    p5.ellipse(p5.mouseX, p5.mouseY, sizex, sizey);
+
+    p5.rect(p5.mouseX, p5.mouseY, sizex / 2, sizey / 2);
   };
   return (
     <Center flexDirection={"column"} justifyContent={"center"}>
