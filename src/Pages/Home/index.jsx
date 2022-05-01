@@ -6,7 +6,6 @@ import sound from "../../media/gospel.mp3";
 // import lanssa from "../../media/cachorrada.mp3";
 import img1 from "../../media/pics/red.png";
 import img2 from "../../media/pics/globe.png";
-import { Canvas } from "../../components/Canvas";
 
 export const Home = () => {
   const [play] = useSound(sound);
@@ -25,7 +24,6 @@ export const Home = () => {
         onClick={() => history.push("/fodase")}
       >
         margin={"20px"}
-
       </Button>
       <p>text</p>
       <Image
