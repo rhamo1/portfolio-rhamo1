@@ -25,6 +25,7 @@ export const Home = () => {
         onClick={() => history.push("/fodase")}
       >
         margin={"20px"}
+
       </Button>
       <p>text</p>
       <Image
