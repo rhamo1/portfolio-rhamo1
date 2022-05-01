@@ -4,6 +4,7 @@ import { Home } from "../Pages/Home";
 import { Cachorro } from "../Pages/Cachorro";
 import { Draw } from "../Pages/Draw";
 import { Spiral } from "../Pages/3Dcube";
+import { RadioGospel } from "../Pages/RadioGospel";
 
 export const Routes = () => {
   return (
@@ -12,7 +13,7 @@ export const Routes = () => {
       <Route path="/fodase" component={Fodase} />
       <Route path="/cachorro" component={Cachorro} />
       <Route path="/canvas" component={Draw} />
-      <Route path="/spiral" component={Spiral} />
+      <Route path="/radiogospel" component={RadioGospel} />
     </Switch>
   );
 };

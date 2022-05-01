@@ -4,9 +4,8 @@ import React from "react";
 import Sketch from "react-p5";
 import { useHistory } from "react-router-dom";
 
-const history = useHistory;
-
 export const Draw = () => {
+  const history = useHistory();
   console.log(typeof h);
   const setup = (p5, canvasParentRef) => {
     // use parent to render the canvas in this ref
@@ -41,7 +40,7 @@ export const Draw = () => {
   };
   return (
     <Center flexDirection={"column"} justifyContent={"center"}>
-      <Sketch setup={setup} draw={draw} />;
+      <Sketch setup={setup} draw={draw} />
       <Button onClick={() => history.push("/")}>go home, kid</Button>
     </Center>
   );
