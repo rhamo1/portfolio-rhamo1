@@ -1,15 +1,16 @@
-import { Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Fodase } from "../Pages/Fodase";
 import { Home } from "../Pages/Home";
-import history from "../history/";
+import { Cachorro } from "../Pages/Cachorro";
+import { Draw } from "../Pages/Draw";
 
 export const Routes = () => {
   return (
-    // <Router history={history}>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/fodase" component={Fodase} />
+      <Route path="/cachorro" component={Cachorro} />
+      <Route path="/canvas" component={Draw} />
     </Switch>
-    // </Router>
   );
 };
