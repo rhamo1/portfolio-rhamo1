@@ -15,9 +15,11 @@ import img8 from "../../media/pics/8.png";
 import img9 from "../../media/pics/9.png";
 import img10 from "../../media/pics/10.png";
 import gospel from "../../media/pics/gospel.png";
+
 import gif from "../../media/gspl.gif";
 import { useState } from "react";
 import { links } from "../../media/media_queries";
+
 
 export const Home = () => {
   const [play] = useSound(sound);
@@ -50,9 +52,11 @@ export const Home = () => {
       alignItems={"center"}
       justifyContent={"center"}
     >
+
       <Image margin={"8px"} maxWidth={"30%"} src={gospel} />
 
       <Image margin={"3px"} marginBottom={"10px"} maxWidth={"60%"} src={gif} />
+
       <Stack>
         <Button
           padding={"10px"}
@@ -73,6 +77,7 @@ export const Home = () => {
       </Stack>
 
       <Stack display={"flex"} justifyContent={"center"} alignItems={"center"}>
+
         <h3>® GOSPELDOWNLOADS 2022 ®</h3>
         {/* 
         <Image
