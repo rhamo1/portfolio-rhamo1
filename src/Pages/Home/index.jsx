@@ -81,7 +81,7 @@ export const Home = () => {
           height={"300px"}
           src={links[imgCounter]}
         /> */}
-        <Image margin={"20px"} maxWidth={"40%"} src={img8} />
+        <Image margin={"20px"} maxWidth={"60%"} src={img8} />
         {/* <Image margin={"20px"} maxWidth={"40%"} src={img1} />
         <h1>-/-/-/-</h1>
         <Image margin={"20px"} maxWidth={"40%"} src={img2} />

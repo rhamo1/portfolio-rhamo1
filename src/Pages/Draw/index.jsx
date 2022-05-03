@@ -20,10 +20,10 @@ export const Draw = () => {
   let sizex = 50;
   let sizey = 50;
   const draw = (p5) => {
+    sizex = p5.mouseX;
+    sizey = p5.mouseY;
     if (p5.mouseIsPressed) {
       // color();
-      sizex = p5.mouseX;
-      sizey = p5.mouseY;
 
       colorValue = p5.mouseX * 0.5;
 
@@ -32,11 +32,11 @@ export const Draw = () => {
       colorValue2 = p5.mouseY * 0.09;
 
       p5.fill(colorValue, colorValue1, colorValue2);
+      p5.circle(p5.mouseY, p5.mouseX, sizey / 2, sizex / 2);
     } else {
       p5.fill(colorValue, colorValue1, colorValue2);
+      p5.rect(p5.mouseY, p5.mouseX, sizex / 2, sizey / 2);
     }
-
-    p5.rect(p5.mouseX, p5.mouseY, sizex / 2, sizey / 2);
   };
   return (
     <Center flexDirection={"column"} justifyContent={"center"}>
