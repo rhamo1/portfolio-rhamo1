@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"98.css@^0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/98.css/-/98.css-0.1.18.tgz#8c5514edfdccb32ef9e5b10904036ba674c21df7"
+  integrity sha512-I6l22DVVGAeets2KzpWhnbj3vCmP5HrkkZFnN8MhFF0z5yoXLkMM7p5vKCN9ap+Tnb4bFe4kukcMsinpDcnfhQ==
+
 "@ampproject/remapping@^2.1.0":
   version "2.2.0"
   resolved "https://registry.npmjs.org/@ampproject/remapping/-/remapping-2.2.0.tgz"
@@ -1173,6 +1178,11 @@
   version "1.1.3"
   resolved "https://registry.npmjs.org/@chakra-ui/css-reset/-/css-reset-1.1.3.tgz"
   integrity sha512-AgfrE7bRTJvNi/4zIfacI/kBHmHmHEIeQtHwCvk/0qM9V2gK1VM3ctYlnibf7BTh17F/UszweOGRb1lHSPfWjw==
+
+"@chakra-ui/css-reset@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/css-reset/-/css-reset-2.0.1.tgz#53bbc2c48dd9fdfb59af8cb8e20390ad7ddb3688"
+  integrity sha512-8RhAC7l5RHp9hNDN2M2feZ2wPaoSrgxzqx6VqLTIul2lwucpp1LTlrDlPCBMJe8fp51Q83IOCW4882ktsXxktA==
 
 "@chakra-ui/descendant@2.1.3":
   version "2.1.3"
@@ -3680,6 +3690,11 @@ cliui@^7.0.2:
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
 
+clsx@^1.1.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz"
@@ -5382,7 +5397,7 @@ history@^4.9.0:
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
 
-hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.1:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.1:
   version "3.3.2"
   resolved "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -8001,6 +8016,14 @@ react-dom@^18.1.0:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
 
+react-draggable@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/react-draggable/-/react-draggable-4.4.5.tgz#9e37fe7ce1a4cf843030f521a0a4cc41886d7e7c"
+  integrity sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==
+  dependencies:
+    clsx "^1.1.1"
+    prop-types "^15.8.1"
+
 react-error-overlay@^6.0.11:
   version "6.0.11"
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
@@ -8022,6 +8045,18 @@ react-focus-lock@2.5.2:
     react-clientside-effect "^1.2.5"
     use-callback-ref "^1.2.5"
     use-sidecar "^1.0.5"
+
+react-icons@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
+  integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
+
+react-in-viewport@^1.0.0-alpha.28:
+  version "1.0.0-alpha.28"
+  resolved "https://registry.yarnpkg.com/react-in-viewport/-/react-in-viewport-1.0.0-alpha.28.tgz#3957cb7931ec26582497acd14f7c3941f020fe75"
+  integrity sha512-SjBVCPUIRfJb516BUev1u/dejBfI5jIcskDz4Irq2RezNG7D199eER8reRzZX+w/FLxz21rpdqRbJbagv5n37Q==
+  dependencies:
+    hoist-non-react-statics "^3.0.0"
 
 react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0:
   version "16.13.1"
@@ -8083,6 +8118,13 @@ react-router-dom@5:
     react-router "5.3.1"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
+
+react-router-hash-link@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/react-router-hash-link/-/react-router-hash-link-2.4.3.tgz#570824d53d6c35ce94d73a46c8e98673a127bf08"
+  integrity sha512-NU7GWc265m92xh/aYD79Vr1W+zAIXDWp3L2YZOYP4rCqPnJ6LI6vh3+rKgkidtYijozHclaEQTAHaAaMWPVI4A==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-router@5.3.1:
   version "5.3.1"

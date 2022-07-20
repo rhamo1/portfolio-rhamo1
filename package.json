@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "98.css": "^0.1.18",
+    "@chakra-ui/css-reset": "^2.0.1",
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -14,8 +16,12 @@
     "framer-motion": "^6.3.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-draggable": "^4.4.5",
+    "react-icons": "^4.4.0",
+    "react-in-viewport": "^1.0.0-alpha.28",
     "react-p5": "^1.3.28",
     "react-router-dom": "5",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "use-sound": "^4.0.1",
     "web-vitals": "^2.1.0"

@@ -1,4 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
+import { ThemeProvider } from "@chakra-ui/react";
 
 const composeProviders =
   (...providers) =>
@@ -8,4 +10,8 @@ const composeProviders =
       props.children
     );
 
-export const AllProviders = composeProviders(BrowserRouter);
+export const AllProviders = composeProviders(
+  ChakraProvider,
+  BrowserRouter
+  // ThemeProvider
+);
