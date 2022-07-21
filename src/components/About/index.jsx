@@ -8,19 +8,19 @@ export const About = ({ isMobile }) => {
     <Stack
       flexDirection={isMobile ? "column" : "row"}
       alignItems={isMobile ? "center" : "flex-start"}
-      width={isMobile ? "80%" : "90%"}
+      width={isMobile ? "100%" : "90%"}
       padding={"10px"}
       height={"90%"}
       //   margin={"10rem"}
     >
       <Image
         src={rhamon}
-        padding={isMobile ? "10px" : "5px"}
+        padding={isMobile ? "2px" : "5px"}
         fit={"contain"}
-        width={isMobile ? "60%" : "50%"}
+        width={isMobile ? "80%" : "50%"}
       />
       <Stack alignItems={"center"}>
-        <Text width={"80%"} padding={"20px"}>
+        <Text width={"95%"} padding={"20px"}>
           <Heading paddingBottom={"20px"}>sobre</Heading>
           Opa, beleza? Meu nome é Rhamon, tenho 24 anos e atualmente resido em
           Curitiba. Sou artista preto, desenvolvedor e apaixonado por
