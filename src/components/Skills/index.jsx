@@ -1,4 +1,12 @@
-import { Grid, GridItem, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  Heading,
+  ListItem,
+  Stack,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { SiJavascript, SiTypescript } from "react-icons/si";
@@ -13,24 +21,18 @@ export const Skills = (isMobile) => {
       flexDirection={isMobile ? "column" : "row"}
       alignItems={isMobile ? "center" : "flex-start"}
       width={isMobile ? "80%" : "60%"}
-      padding={"10px"}
+      padding={"20px"}
+      paddingTop="4rem"
+      id="skills"
     >
-      <Text width={"80%"} padding={"20px"}>
-        <Heading padding={"10px"}>Habilidades & soft skills</Heading>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus, sed fugiat impedit temporibus mollitia, odio modi cumque
-        autem, non culpa deleniti? Dolore, ea? Hic ipsum sit, mollitia officiis
-        totam nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Ratione suscipit quisquam incidunt sed numquam quasi praesentium totam
-        aliquid voluptatem ad ea perspiciatis, placeat nesciunt unde. Veniam
-        perspiciatis cumque libero corrupti? HTML | CSS | JavaScript |
-        Typescript | React | Redux; Python | Flask | Jinja | Django | Node; SQL
-        | PostgreSQL | Scrum | Kanban;
+      <Text width={"80%"} padding={"10px"}>
+        <Heading paddingBottom={"30px"}>stacks & soft skills</Heading>
+        Estas são algumas das tecnologias que uso no dia-a-dia:
       </Text>
       <Grid
-        templateColumns="repeat(2, 1fr)"
-        gap={6}
-        flexDirection={"row"}
+        templateColumns={isMobile ? "repeat(2, 1fr)" : "repeat(1, 1fr)"}
+        gap={5}
+        flexDirection={"column"}
         alignItems={"baseline"}
       >
         {/*  */}
@@ -60,7 +62,6 @@ export const Skills = (isMobile) => {
           </Stack>
         </GridItem>
         {/*  */}
-
         <GridItem>
           <Stack alignItems={"center"}>
             <Heading padding={"1rem"}>React</Heading>
@@ -122,6 +123,24 @@ export const Skills = (isMobile) => {
               nihil error rerum quia cum commodi odit enim quidem quis
               voluptatibus molestias perferendis!
             </Text>
+          </Stack>
+        </GridItem>
+        <GridItem>
+          <Stack alignItems={"center"}>
+            <Heading padding={"1rem"}>Outras</Heading>
+
+            <UnorderedList>
+              <ListItem>Linux</ListItem>
+              <ListItem>Git</ListItem>
+              <ListItem>Redux</ListItem>
+              <ListItem>Flask</ListItem>
+              <ListItem>Jinja</ListItem>
+              <ListItem>Django</ListItem>
+              <ListItem>SQL</ListItem>
+              <ListItem>PostgreSQL</ListItem>
+              <ListItem>Scrum</ListItem>
+              <ListItem>Kanban</ListItem>
+            </UnorderedList>
           </Stack>
         </GridItem>
       </Grid>

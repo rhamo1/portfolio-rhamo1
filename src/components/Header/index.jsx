@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 export const Header = ({ inViewPort, isMobile }) => {
   console.log(inViewPort);
@@ -66,16 +67,16 @@ export const Header = ({ inViewPort, isMobile }) => {
                     justifyContent={"center"}
                   >
                     <Link variant={"header"} marginTop={"0px"}>
-                      sobre
-                    </Link>
-                    <Link href="#skills" variant={"header"} marginTop={"0px"}>
-                      habilidades
+                      <HashLink to={"/page#top"}>sobre</HashLink>
                     </Link>
                     <Link variant={"header"} marginTop={"0px"}>
-                      projetos
+                      <HashLink to={"/page#skills"}>habilidades</HashLink>
                     </Link>
                     <Link variant={"header"} marginTop={"0px"}>
-                      contato
+                      <HashLink to={"/page#projects"}>projetos</HashLink>
+                    </Link>
+                    <Link variant={"header"} marginTop={"0px"}>
+                      <HashLink to={"/page#contact"}>contato</HashLink>
                     </Link>
                     <Link
                       onClick={onClose}
@@ -112,12 +113,17 @@ export const Header = ({ inViewPort, isMobile }) => {
         >
           <Text>RHAMON DE SOUZA</Text>
 
-          <Link variant={"header"} marginTop={"0px"}>
+          <HashLink smooth to="/page#top" variant={"header"} marginTop={"0px"}>
             sobre
-          </Link>
-          <Link variant={"header"} marginTop={"0px"}>
+          </HashLink>
+          <HashLink
+            smooth
+            to={"/page#skills"}
+            variant={"header"}
+            marginTop={"0px"}
+          >
             habilidades
-          </Link>
+          </HashLink>
           <Link variant={"header"} marginTop={"0px"}>
             projetos
           </Link>

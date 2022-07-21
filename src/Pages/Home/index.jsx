@@ -11,6 +11,7 @@ import { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 import { About } from "../../components/About";
 import { Header } from "../../components/Header";
+import { Projects } from "../../components/Projects";
 import { Skills } from "../../components/Skills";
 
 export const Home = () => {
@@ -28,7 +29,8 @@ export const Home = () => {
       <Header inViewPort={inViewPort} isMobile={isMobile} />
       <Stack display={"flex"} alignItems="center">
         <About isMobile={isMobile} />
-        <Skills id={"skills"} isMobile={isMobile} />
+        <Skills isMobile={isMobile} />
+        <Projects isMobile={isMobile} />
       </Stack>
     </>
   );
