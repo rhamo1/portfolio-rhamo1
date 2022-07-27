@@ -12,7 +12,7 @@ import {
 import { SiVercel } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import sk1 from "../../media/screenshots/sk1.png";
-import mm1 from "../../media/screenshots/mm1.png";
+import mm1 from "../../media/screenshots/mm2.jpg";
 
 export const Projects = ({ isMobile }) => {
   return (
