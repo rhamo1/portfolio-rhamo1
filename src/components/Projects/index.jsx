@@ -1,11 +1,25 @@
-import { Box, Grid, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Grid,
+  Heading,
+  HStack,
+  Image,
+  Link,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
+import { SiVercel } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import sk1 from "../../media/screenshots/sk1.png";
+import mm1 from "../../media/screenshots/mm1.png";
 
 export const Projects = ({ isMobile }) => {
   return (
     <Stack
-      flexDirection={isMobile ? "column" : "row"}
-      alignItems={isMobile ? "center" : "flex-start"}
-      width={isMobile ? "95%" : "90%"}
+      flexDirection={isMobile ? "column" : "column"}
+      alignItems={isMobile ? "center" : "center"}
+      width={isMobile ? "95%" : "100%"}
       paddingTop={"100px"}
       id="projects"
     >
@@ -17,21 +31,90 @@ export const Projects = ({ isMobile }) => {
       <Grid
         flexDir={"row"}
         templateColumns={isMobile ? "repeat(1, 1fr)" : "repeat(2, 1fr)"}
-        gap={6}
-        paddingBottom={"30px"}
+        gap={2}
+        paddingBottom={"50px"}
+        justifyItems={"center"}
       >
-        <Box border={"3px solid black"} h={"20rem"} w={"20rem"}>
+        <Flex
+          border={"3px solid black"}
+          w={"100%"}
+          padding={"1rem"}
+          alignItems={"center"}
+          flexDirection={"column"}
+        >
           Stack kenzie
-        </Box>
-        <Box border={"3px solid black"} h={"20rem"} w={"20rem"}>
-          DoIt
-        </Box>
-        <Box border={"3px solid black"} h={"20rem"} w={"20rem"}>
+          <Image src={sk1} height={"100%"} width={"60%"} padding={4} />
+          <HStack>
+            <Link href="https://stack-kenzie.vercel.app/" isExternal>
+              <SiVercel size={"3rem"} />
+            </Link>
+            <Link
+              href="https://github.com/rhamo1/stack-kenzie-rhamo1"
+              isExternal
+            >
+              <FaGithub size={"3rem"} />
+            </Link>
+          </HStack>
+        </Flex>
+        <Flex
+          border={"3px solid black"}
+          w={"100%"}
+          padding={"1rem"}
+          alignItems={"center"}
+          flexDirection={"column"}
+        >
           Mini Market
-        </Box>
-        <Box border={"3px solid black"} h={"20rem"} w={"20rem"}>
+          <Image src={mm1} height={"100%"} width={"60%"} padding={4} />
+          <HStack>
+            <Link
+              href="https://mini-market-api.herokuapp.com/api/users"
+              isExternal
+            >
+              <SiVercel size={"3rem"} />
+            </Link>
+            <Link
+              href="https://github.com/rhamo1/MiniMarket-API-rhamo1"
+              isExternal
+            >
+              <FaGithub size={"3rem"} />
+            </Link>
+          </HStack>
+        </Flex>
+        <Flex
+          border={"3px solid black"}
+          w={"100%"}
+          padding={"1rem"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
+          DoIt
+          <HStack>
+            <Link>
+              <SiVercel size={"3rem"} />
+            </Link>
+            <Link>
+              <FaGithub size={"3rem"} />
+            </Link>
+          </HStack>
+        </Flex>
+
+        <Flex
+          border={"3px solid black"}
+          w={"100%"}
+          padding={"1rem"}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
           ...
-        </Box>
+          <HStack>
+            <Link>
+              <SiVercel size={"3rem"} />
+            </Link>
+            <Link>
+              <FaGithub size={"3rem"} />
+            </Link>
+          </HStack>
+        </Flex>
       </Grid>
     </Stack>
   );

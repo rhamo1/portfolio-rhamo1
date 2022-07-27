@@ -7,7 +7,7 @@ export const About = ({ isMobile }) => {
   return (
     <Stack
       flexDirection={isMobile ? "column" : "row"}
-      alignItems={isMobile ? "center" : "flex-start"}
+      alignItems={isMobile ? "center" : "center"}
       width={isMobile ? "100%" : "90%"}
       padding={"10px"}
       height={"90%"}
@@ -33,7 +33,7 @@ export const About = ({ isMobile }) => {
           do cotidiano. Meu objetivo é aprofundar cada vez mais no
           desenvolvimento de soluções com criatividade e eficiência,e para isso
           aposto na minha facilidade em aprender, na boa comunicação e na
-          constante vontade de absorver mais conheimento.
+          constante vontade de absorver mais conhecimento.
         </Text>
         <HStack width={"100%"} justifyContent={"space-around"}>
           <Link>
