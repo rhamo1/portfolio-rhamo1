@@ -3,6 +3,7 @@ import {
   GridItem,
   Heading,
   HStack,
+  Image,
   ListItem,
   Progress,
   Stack,
@@ -22,6 +23,7 @@ import {
   FaLinux,
   FaGit,
 } from "react-icons/fa";
+import certificado from "../../media/certificado-1.png";
 
 export const Skills = ({ isMobile }) => {
   return (
@@ -149,6 +151,11 @@ export const Skills = ({ isMobile }) => {
           </Stack>
         </GridItem>
       </Grid>
+
+      <Stack>
+        <Heading paddingBottom={"30px"}>certificados</Heading>
+        <Image src={certificado} />
+      </Stack>
     </Stack>
   );
 };
